@@ -3,6 +3,7 @@ import  spinner  from "../assets/spinner.png"
 import { useEffect, useState } from 'react';
 import {FiFilter} from "react-icons/fi"
 import ScrollButton from '../components/BackToTopButton';
+import Image from '../components/Image';
 function Pokedex() {
 
 
@@ -42,7 +43,7 @@ function Pokedex() {
   }, [orderNamesValue, setSortedNames, setCheckAsc, setCheckDesc, setChecked, sortedNames])
 
   return (
-    loading ? <section className='pokemon__loading'><img className="loading" src={spinner} alt="Carregando" /></section>
+    loading ? <section className='pokemon__loading'><Image className="loading" src={spinner} alt="Carregando" width="" height="" /></section>
       : <>
         <section className='pokemon__section'>
           <form className='pokemon__section__form'>

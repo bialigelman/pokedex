@@ -2,6 +2,7 @@ import { useContext, useEffect, useCallback, useMemo } from 'react';
 import { PokedexContext } from '../providers/PokedexProvider';
 import { IPokemonData, IPokemons, IResponseList, PokemonAttributes } from '../types/pokemon';
 import { v4 as uuidv4 } from 'uuid';
+import Image from '../components/Image';
 
 export const usePokemonList = () => {
     const LIST_ENDPOINT = "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0";
@@ -157,7 +158,7 @@ export const usePokemonList = () => {
                 <article key={uuidv4()} className='pokemon__article'>
                     <h2 className='pokemon__article__name'>{name}</h2>
                     {typeof sprites !== 'string' && sprites?.front_default && (
-                        <img className='pokemon__article__img' src={sprites?.front_default} alt={name} key={uuidv4()} />
+                        <Image className='pokemon__article__img' src={sprites?.front_default} alt={name} key={uuidv4()} width={150} height={150} />
                     )}
                     {Array.isArray(stats) && (
                             <>
