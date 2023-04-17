@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Image from '../components/Image';
 
 export const usePokemonList = () => {
-    const LIST_ENDPOINT = "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0";
+    const LIST_ENDPOINT = "https://pokeapi.co/api/v2/pokemon?limit=50&offset=0";
 
     const {
         pokemonList,
