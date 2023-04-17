@@ -1,7 +1,7 @@
 import { usePokemonList } from '../hooks/usePokemonList';
-import  spinner  from "../assets/spinner.png"
 import { useEffect, useState } from 'react';
 import { FiFilter } from "react-icons/fi"
+import spinner from "../assets/spinner.png"
 import ScrollButton from '../components/BackToTopButton';
 import Image from '../components/Image';
 
