@@ -1,0 +1,32 @@
+.pokemon__article {
+    background: #e28743;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    &__name {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 5px 5px;
+        color: #3c1b79;
+    }
+    &__img {
+        width: 150px;
+    }
+    &__stat {
+        display: flex;
+        justify-content: space-between;
+        width: 90px;
+        &__span1, &__span2 {
+            display: block;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        &__span2{
+            color: #3c1b79;
+        }
+    }
+}

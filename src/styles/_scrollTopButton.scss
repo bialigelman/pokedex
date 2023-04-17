@@ -1,0 +1,18 @@
+.scrollTopButton {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background: #8b36d8;
+    border: 1px solid #8b36d8;
+    padding: 5px;
+    border-radius: 10px;
+    width: 149px;
+    justify-content: space-around;
+    color: #FFF;
+    font-weight: 50;
+}

@@ -1,0 +1,108 @@
+.loading {
+    filter: invert(1);
+    width: 50%;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.pokemon__loading {
+    background: rgb(2, 0, 36);
+    background: -moz-linear-gradient(
+        127deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(26, 23, 108, 1) 39%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        127deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(26, 23, 108, 1) 39%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    background: linear-gradient(
+        127deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(26, 23, 108, 1) 39%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+.pokemon__section {
+    background: rgb(2, 0, 36);
+    background: -moz-linear-gradient(
+        127deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(26, 23, 108, 1) 39%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        127deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(26, 23, 108, 1) 39%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    background: linear-gradient(
+        127deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(26, 23, 108, 1) 39%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__form {
+        display: flex;
+        border-radius: 25px;
+        padding: 8px;
+        align-items: center;
+        background: #1fb7d4;
+        margin-top: 30px;
+        :nth-child(6){
+            margin-right: 0;
+        }
+        &__input {
+            display: none;
+        }
+        &__label {
+            padding: 5px;
+            border: 1px solid #c3c1c1;
+            border-radius: 20px;
+            margin: 0 5px;
+            background: #75b9d3;
+          
+        }
+    }
+    &__pokemonElements {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        justify-content: center;
+    }
+}
